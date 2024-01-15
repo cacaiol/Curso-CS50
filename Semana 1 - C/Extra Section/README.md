@@ -1,5 +1,6 @@
 
 Reforçando ideias sobre escrever seu código de uma maneira mais simples e legivel.
+Exemplos escritos em `C`
 ```
 int i = 0;                                    for (int i = 0; i < 3; i++)
 while (i < 3)                                {
