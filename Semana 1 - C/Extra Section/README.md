@@ -1,9 +1,21 @@
 
-Reforçando ideias sobre escrever seu código de uma maneira mais simples e legivel.
-Exemplos escritos em `C`
+**Data Types and Variables**
+
+`INT` para dados com valores inteiros. 4 *bytes* de memoria (32 bits). Limitado a 32 bits. `UNSIGNED` dobra o alcance para valores inteiros ao custo de não usar os valores negativos. 
+
+`FLOAT` para numeros reais, com valores após a virgula: 8,9576. 4 *bytes* de memoria (32 bits). Limitado à uma certa quantidade de valores após a virgula. O tipo `DOUBLE` é uma solução que
+aumenta o alcance após a virgula.
+
+`VOID` Funções que não há retorno. 
+
+`BOOL`
+
 
 (WHILE LOOPS é ideal quando não se sabe quantas vezes quer iterar algo)
 (FOOR LOOPS já é ideal quando se sabe o numero exato de vezes que quer iterar algo)
+
+Reforçando ideias sobre escrever seu código de uma maneira mais simples e legivel.
+Exemplos escritos em `C`
 ```
 int i = 0;                                    for (int i = 0; i < 3; i++)
 while (i < 3)                                {
@@ -12,7 +24,6 @@ while (i < 3)                                {
    i++;
 }
 ```
-
 
 ```
   int calls = 4;                                int calls = 4;
