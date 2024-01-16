@@ -22,6 +22,20 @@ aumenta o alcance após a virgula.
 
 `NOT` (!) Inverte o valor da operação: Se X é *true*, então !X é *false*
 
+*Operador Ternário* 
+
+`int x = (expr) ? 5 : 6;` 
+
+``int x;
+   if (expr)
+   {
+      x = 5;
+   } 
+   else
+   {
+      x = 6;
+   }``   
+                                             
 (WHILE LOOPS é ideal quando não se sabe quantas vezes quer iterar algo)
 (FOOR LOOPS já é ideal quando se sabe o numero exato de vezes que quer iterar algo)
 
