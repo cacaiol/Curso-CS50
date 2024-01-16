@@ -35,7 +35,9 @@ aumenta o alcance após a virgula.
    {
       x = 6;
    }``   
-                                             
+
+  **LOOPS** 
+  
 (WHILE LOOPS é ideal quando não se sabe quantas vezes quer iterar algo)
 (FOOR LOOPS já é ideal quando se sabe o numero exato de vezes que quer iterar algo)
 
