@@ -8,8 +8,19 @@ aumenta o alcance após a virgula.
 
 `VOID` Funções que não há retorno. 
 
-`BOOL`
+`BOOL` para variaveis do tipo booleano, salvam valores do tipo verdadeiro ou falso. 
 
+`STRING` para conjunto de caracteres.
+
+**Operadores Lógicos**
+
+*Boolean Expressions*
+
+`&&`  AND só sera verdadeiro se todos os lados forem verdadeiros. *true* && *true* = *true*. Caso não atenda a essa condição será *false*
+
+`||`  OR será verdadeiro se pelo menos uma condição for verdadeira. False apenas com *false* + *false* = *false*
+
+`NOT` (!) Inverte o valor da operação: Se X é *true*, então !X é *false*
 
 (WHILE LOOPS é ideal quando não se sabe quantas vezes quer iterar algo)
 (FOOR LOOPS já é ideal quando se sabe o numero exato de vezes que quer iterar algo)
