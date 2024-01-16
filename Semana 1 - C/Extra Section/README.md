@@ -22,7 +22,7 @@ aumenta o alcance após a virgula.
 
 `NOT` (!) Inverte o valor da operação: Se X é *true*, então !X é *false*
 
-*Operador Ternário* 
+*Operador Ternário*  Apenas para substituir um if-else simples se quiser.
 
 `int x = (expr) ? 5 : 6;` 
 
