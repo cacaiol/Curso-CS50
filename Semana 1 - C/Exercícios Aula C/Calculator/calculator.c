@@ -6,7 +6,7 @@
     int x = get_int("x: ");
     int y = get_int("y: ");
 
-   double z = (double) x / (double) y;
+   double z = (double) x / (double) y; //type casting
    printf("%f\n", z);
  }
 
