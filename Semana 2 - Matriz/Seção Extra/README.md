@@ -9,8 +9,7 @@ Declarar uma função chamada valid_triangle que usa três números reais repres
  - a soma dos comprimentos de quaisquer dois lados do triângulo deve ser maior que o comprimento do terceiro lado.
 
 
-``
-  bool valid_triangle(float x, float y, float z);
+`` bool valid_triangle(float x, float y, float z);
   bool valid_triangle(float x, float y, float z)
   {
     if (x <= 0 || y <= 0 || z <= 0)
@@ -21,7 +20,5 @@ Declarar uma função chamada valid_triangle que usa três números reais repres
       {
           return false;
       }
-
       return true;
-    }
-``
+    } ``
