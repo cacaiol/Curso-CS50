@@ -22,5 +22,28 @@ Declarar uma função chamada valid_triangle que usa três números reais repres
           return false;
       }
       return true;
-    } 
-    ```
+    }
+ ```
+
+**VARIABLE ESCOPO**
+
+Este trecho apresenta a ideia de variaveis e escopo, duas variaveis (X) com o mesmo nome.
+
+```
+int increment(int x);
+
+int main(void)
+{
+  int x = 1;
+  int y;
+  y = increment(x);
+  printf("x is %i, y is %i\n", x, y);
+}
+
+int increment(int x)
+{
+  x++;
+  return x;
+}
+ ```
+O resultado desse trecho é: `x = 1`  e  `y = 2`
