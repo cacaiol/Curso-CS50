@@ -33,7 +33,7 @@ Este trecho apresenta a ideia de variaveis e escopo, duas variaveis (X) com o me
 int increment(int x);
 
 int main(void)
-{
+{40
   int x = 1;
   int y;
   y = increment(x);
@@ -47,3 +47,27 @@ int increment(int x)
 }
  ```
 O resultado desse trecho é: `x = 1`  e  `y = 2`
+
+
+**ARRAYS**
+
+*NOTES*
+- Em c, os elementos de um array são indexados a partir de 0. Esta é uma das principais razões pelas quais contamos a partir de zero.
+- Se uma matriz consiste em n elementos, o primeiro elemento está localizado no índice 0. O último elemento está localizado no índice *(n-1)* onde *n* é o numero de elementos. 
+  
+*DECLARATIONS*
+
+**Exemplo**
+
+type name[size] -> int nota_aluno[40]
+
+
+
+
+
+
+
+
+
+
+
