@@ -20,4 +20,5 @@ Linear Search               Binary Search
 ```
 
 *Linear Search* -> No pior dos casos será preciso N etapas.
+
 *Binary Search* -> Log2(7) no pior dos casos. 
