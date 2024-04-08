@@ -78,3 +78,43 @@ typedef struct -> Criar um novo tipo que contenha uma coleção de outros tipos 
 	president.name = "Samia"; -> Adicionando valores as propriedades
 	president.votes = 10; -> Adicionando valores as propriedades
 ```
+
+**Recursion**
+
+A definição de uma função recursiva é aquela que, como parte de sua execução, invoca a si mesma.
+
+Demonstrando com fatoração matemática. 
+
+```
+        fact(1) = 1					        fact(1) = 1					
+	fact(2) = 2 * 1 					fact(2) = 2 * fact(1)
+	fact(3) = 3 * 2 * 1                recursion ->		fact(3) = 3 * fact(2)      
+	fact(4) = 4 * 3 * 2 * 1 				fact(4) = 4 * fact(3)
+	fact(5) = 5 * 4 * 3 * 2 * 1				fact(5) = 5 * fact(4)
+
+``` 
+Logo temos -> fact(n) = n * fact(n-1)
+
+*Toda* função recursiva tem dois casos que podem ser aplicados, dada qualquer entrada. 
+
+- O caso base, que quando acionado encerrará o processo recursivo.
+- O caso recursivo, que é onde a recursão realmente ocorrerá.
+
+**Base case** -> fact(1) = 1
+
+**Recursive case** -> n * fact(n-1)
+
+*Demonstração em C*
+
+```
+int fact(int n)
+{
+	// base case
+	if (n == 1)
+		return1;
+
+	// recursive case
+	else
+		return n* fact(n-1);
+}
+```
