@@ -35,3 +35,46 @@ Linear Search               Binary Search
 - A lista precisa estar ordenada.
 - No pior dos casos será O(log n)
 - No melhor dos casos será Ω(1)
+
+
+**Omega Ω Notation**
+
+Diz que dado qualquer tipo de entrada, qual seria o menor numero de passos que daríamos?
+
+Exemplo:
+
+```
+Linear Search               Binary Search
+     Ω(1)                     Ω(1)
+```
+
+**Notações Comuns:**
+
+```
+O(1)               Ω(1)
+
+O(log(N))	   Ω(log(N))					
+
+O(N)               Ω(N)
+
+O(N^2)             Ω(N^2)
+```
+
+**Struct:**
+
+**Encapsular** informações (dados) para que possamos no referir a eles com apenas um nome.
+
+Definição em C com um exemplo de uma struct de candidatos. 
+
+```
+typedef struct -> Criar um novo tipo que contenha uma coleção de outros tipos basicos. 
+	{
+		string name;  -> Basic Types
+		int votes:    -> Basic Types
+	}
+	candidate;
+
+	candidate president; -> Instanciando a struct acima
+	president.name = "Samia"; -> Adicionando valores as propriedades
+	president.votes = 10; -> Adicionando valores as propriedades
+```
