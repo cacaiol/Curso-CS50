@@ -118,3 +118,27 @@ int fact(int n)
 		return n* fact(n-1);
 }
 ```
+Uma função recursiva pode ter mais de um caso recursivo. 
+
+Exemplo com a conjectura de *Collatz*:
+
+A conjectura de *Collatz* especula que é sempre possível "voltar a 1" numeros inteiros positivos. 
+
+Demonstração em C 
+
+```
+int collatz(int n)
+{
+	// base case
+	if (n == 1)
+		return 0;
+
+	// recursive case 1
+	else if ((n % 2) == 0)
+		return 1 + collatz(n/2);
+
+	// recursive case 2
+	else 
+		return 1 + collatz(3*n +1);
+}	
+```
