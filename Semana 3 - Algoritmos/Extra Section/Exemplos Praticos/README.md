@@ -142,3 +142,15 @@ int collatz(int n)
 		return 1 + collatz(3*n +1);
 }	
 ```
+**Merge Sort**
+
+Na classificação por mesclagem, a ideia do algoritmo é classificar arrays menores e então combiná-los (mesclá-los) na ordem de classificação.
+
+*No pior* dos casos temos que dividir N elementos e então recombiná-los, efetivamente duplicando os subarrays classificados à medida que os 
+construímos. Combinando matrizes classificadas de 1 elemento, matrizes de 2 elementos, matrizes classificadas de 2 elementos em matrizes de 4 elementos.
+
+-> O(n log n)
+
+*Melhor dos casos* o array já está perfeitamente classificado, mas ainda temos que dividir e recombiná-lo novamente com este algoritmo.
+
+-> Ω(n log n)
