@@ -62,3 +62,61 @@ Logo podemos dizer: ``string s = "HI!";`` = ``char *s = "HI!";``
 
 - char *s é o endereço do primeiro caractere da palavra armazenada em s
 
+**Aritmética dos ponteiros** 
+
+Exemplo em C
+
+```
+#include <stdio.h>
+
+	int main(void)
+	{
+		char *s = "HI!";
+		printf("%c", *s);       -> Aponta para o inicio da cadeia de caracteres -> H
+		printf("%c", *(s + 1)); -> Aponta para o inicio da cadeia de caracteres + 1 -> I
+		printf("%c\n", *(s + 2)); -> Aponta para o inicio da cadeia de caracteres + 2 -> !
+	}
+```
+
+**Comparação**
+
+Se compararmos duas variaveis do tipo string, na verdade estaremos comparando seu endereço na memoria, ja que uma string é uma cadeia de caracteres armazenadas na memoria. 
+
+A comparação de strings sem o uso de algum metodo proprio de alguma biblioteca não dará certo. 
+
+Exemplo em C:
+
+```
+int main(void)
+	{
+		string s = get_string("s: ");     ->  char *s = get_string("s: ");           
+		string t = get_string("t: ");	  ->  char *t = get_string("t: ");
+
+		if (s == t)                       -> Deste modo sempre será diferente porque o que estamos comparando
+		{                                    é o seu endereço na memória.
+			printf("Same\n");
+		}
+		else			         						
+		{
+			printf("Different\n");	
+		}
+	}
+```
+
+Para comparar as duas strings acima basta adicionar uma biblioteca e utilizar de seus metódos.
+
+Exemplo em C:
+
+```
+#include <string.h> -> Biblioteca do metódo
+
+	if (stcmp(s, t) == 0)  -> Este método compara as duas strings recebidas 
+	{
+		printf("Same\n");
+	}
+	else
+	{
+		printf("Different\n");
+	}
+```
+	
