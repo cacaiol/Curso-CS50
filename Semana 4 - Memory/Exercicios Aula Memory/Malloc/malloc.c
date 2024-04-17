@@ -20,7 +20,7 @@
 		}
 
 
-		for (int i = 0, n = strlen(s); i <= n; i++)   //Essa logica poderia ser substituido pelo método "strcpy"
+		for (int i = 0, n = strlen(s); i <= n; i++)   // Essa logica poderia ser substituido pelo método "strcpy"
 		{
 			t[i] = s[i];
 		}
@@ -31,4 +31,7 @@
 		}
 		printf("%s\n", s);
 		printf("%s\n", t);
+
+        free(t); // Esse método libera a memoria que foi alocada para t
+        return 0;
 	}
