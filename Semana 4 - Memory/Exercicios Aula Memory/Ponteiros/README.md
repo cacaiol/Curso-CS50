@@ -139,9 +139,22 @@ int main(void)
 }
 ```
 
+**Métodos simples da linguagem C nativa utilizam de ponteiros**
 
+Exemplo:
+```
+#include <stdio.h>
 
+int main(void)
+{
+	int n;
+	printf("n: ");
+	scanf("%i", &n);
+	printf("n: %i\n", n);
+}
 
+```
+`scanf("%i", &n)` é um metodo para ler um valor de entrada digitado pelo usuario, em que `&n` nos leva ao endereço onde está armazenado n na memória.
 
 
 
