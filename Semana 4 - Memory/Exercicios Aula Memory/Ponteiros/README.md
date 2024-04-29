@@ -44,7 +44,7 @@ int main(void)
 	printf("%p\n", &s[3]);
 }
 ```
-- A variável "s" por de baixo dos panos paonta para o endereço onde está armazenado o array de characteres "HI!" ou melhor dizendo,
+- A variável "s" por de baixo dos panos aponta para o endereço onde está armazenado o array de characteres "HI!" ou melhor dizendo,
 para o inicio do array, no caso na posição [0] onde está armazenado a letra "H".
 
 - Apontar para s quanto apontar para &s[0] é a mesma coisa, ambos apontam para o inicio do array de characteres.
@@ -119,4 +119,38 @@ Exemplo em C:
 		printf("Different\n");
 	}
 ```
-	
+
+**Garbage Value**
+
+O código abaixo representa um problema com o Garbage Value, pois estamos pedindo para imprimir todos os valores de i
+até que chegue na posição 1024, nenhuma das 1024 posições estão preenchidas com algum dado. Não sabemos o que pode 
+estar armazenando nessas posições na memória. 
+
+```
+#include <stdio.h>
+
+int main(void)
+{
+	int scores[1024];
+	for (int i = 0; i < 1024; i++)
+	{
+		printf("%i\n", scores[i]);
+	}
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
